@@ -1,4 +1,4 @@
-#집합
+""" #집합
 my_set = {1, 2, 3, 4, 5}
 setItem = {5, 3, 1}
 print (my_set)
@@ -76,7 +76,100 @@ print(my_str)
 my_int = int(my_str)
 print(my_int)
 
-print(my_int + 10)
+print(my_int + 10) """
 
 """ my_int2 = int("ten")
 print(my_int2) """
+
+#3-1 연산자
+""" #사칙연산
+a = 10
+b = 3
+
+c= a + b
+#c= a - b
+#c= a / b
+#c= a * b
+#c= a // b
+#c= a % b
+#c= a ** b
+print(c) """
+
+""" #할당 연산자
+a = 0
+print(a)
+
+a += 2
+print(a)
+
+a -= 1
+print(a)
+
+a *= 4
+print(a)
+
+a /= 2
+print(a)
+
+a **= 3
+print(a) """
+
+""" #비교, 관계 연산자
+a = 10
+b = 4
+
+#c = a > b
+#c = a < b
+#c = a >= b
+#c = a <= b
+c = a != b
+
+print(c) """
+
+#논리 연산자
+""" a = 1
+b = 0
+
+print (a and b)
+print (a or b)
+print (not b)
+
+x = True
+y = False
+print(x and y)  
+print(x or y)   
+print(not x)    
+print(not y)    
+ """
+ 
+ #비트 연산자
+""" a = 10
+b = 3
+
+#c = a & b
+#c = a | b
+#c = a ^ b
+#c = ~ a
+c = a<< b
+print(c)
+
+c = a>> b
+print(c) """
+
+#멤버 연산자
+""" my_list = [9, 4, 3, 7, 8, 'hi']
+print(4 in my_list) #4가 있으면 트루
+print(2 in my_list)
+print(2 not in my_list)
+
+my_dic = {"key1" : "v1", "k2" : "v2"}
+print("k2" in my_dic) """
+
+#식별 연산
+x = [1, 2, 3]
+y = [1, 2, 3]
+z = x
+
+print(x is y)  
+print(x is z)  
+print(x is not y)  
