@@ -30,18 +30,18 @@ print (a,b)
 print(a is b) """
 
 #연산자 우선순위
-a = 2 + 3 * 4
-a = 10 / 5 / 2
-a = 2 ** 3 ** 2
-a = 2 ** (3 ** 2)
-a = 10 % 3 % 2
-a = 1 + 2 > 3 and 4 - 1 < 2
-a = not False and True
-a = not True or False and True
-a = 1 & 2 | 3 ^ 4
-a = 5 in [3, 4, 5] or 2 not in [1, 2, 3]
-a = 2 * -3 // 2
-a = 1 == 2 
-a= False != 3
+#a = 2 + 3 * 4
+#a = 10 / 5 / 2
+#a = 2 ** 3 ** 2
+#a = 2 ** (3 ** 2)
+#a = 10 % 3 % 2
+#a = 1 + 2 > 3 and 4 - 1 < 2
+#a = not False and True
+#a = not True or False and True
+#a = 1 & 2 | 3 ^ 4
+#a = 5 in [3, 4, 5] or 2 not in [1, 2, 3]
+#a = 2 * -3 // 2
+#a = 1 == 2 
+a= 1 == 2 != 3
 
 print (a)
