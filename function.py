@@ -205,11 +205,21 @@ print("곱하기: ", mul(a,b))
 print("나누기: ", div(a,b)) """
 
 #5개의 숫자 총합
-def sum_num(num) :
+""" def sum_num(num) :
     return sum(num)
 nums = []
 for i in range(1, 6) :
     innum = int(input(f"{i}번째 숫자 입력:"))
     nums.append(innum)
     
-print(sum_num(nums))
+print(sum_num(nums)) """
+
+#콜백 함수
+""" def prt_func(n) :
+    print("hello", n)
+
+def callfunc(fx) :
+    for i in range(5) :
+	    fx(i)
+
+callfunc(prt_func) """
