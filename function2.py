@@ -156,10 +156,11 @@ print(fres)
 nvres = rd.normalvariate()
 print(nvres) """
 
-import mod.utils as mu
+#모듈화
+""" import mod.utils as mu
 
 my_list = ["apple", "banana", "cherry"]
 print(mu.rd_int(1,100))
 print(mu.rd_list(my_list))
 print(mu.rd_rd())
-print(mu.rd_nmvar())
+print(mu.rd_nmvar()) """
