@@ -58,11 +58,17 @@ print(MyClass.count) """
 		self.movSpd = (20 + self.speed)*(1)*(100)
 
 	def printStatus(self):
-		print("chmpNam:%s, hp%f, lv%d, mvSpd%f, atkSpd%f" %(self.chmpNam))
-	
-KING = Champion("KING", 470)   """
-	  
+		print("chmpNam:%s,speed%d",self.chmpNam, self.speed)
+		
+KING = Champion("KING", 470)  
+GOD = Champion("GOD", 520)
 
+KING.printStatus()
+GOD.printStatus()
+
+GOD.beAtk(60)
+GOD.printStatus()
+ """
 #상속(제일 중요함)
 """ class Champion :
     def __init__(self, name) :
