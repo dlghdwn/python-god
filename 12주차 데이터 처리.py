@@ -179,15 +179,15 @@ with open(folder + "fktemp.csv", "a", newline='', encoding='utf8') as f :
             temp.ipv4_private() + "," + 
             temp.ipv4_public() + "," + 
             temp.catch_phrase() + "," + 
-            temp.color_name() + "\n") """
-        
+            temp.color_name() + "\n")
+         """
 #파일 열기
-import pandas as pd
+""" import pandas as pd
 
 folder = "data/"
 target = folder + "fktemp.csv"
 
-df = pd.read_csv(target)
+df = pd.read_csv(target) """
 
 #print(df)
 #print(df.values[0]) #0번째 데이터
@@ -269,7 +269,76 @@ print(df.color.value_counts())
 print( df.name.count()) """
 
 #비교 연산
-print(df.name == "김병철")
+""" print(df.name == "김병철")
 print("\n--------\n")  
-print(df[df.color == "Beige"].head(1))
+print(df.company == "(주) 이이황")
+print("\n--------\n")   """
+""" temp = df[df.postcode > 70000]
+print(temp)
+print("\n--------\n") """
+
+#print(df[df.color == "Lime"].head(1))
+
+#res = df[df.postcode > 70000][["name", "postcode","color"]]
+#print(res)
+#print(res.count())
+
+#temp = df.postcode.mean()
+#temp = df.postcode.sum()
+#print(temp)
+
+#temp = df[df.color=="Lime"].postcode.mean()
+#temp = df[df.color=="Lime"].postcode.sum()
+#print(temp)
+
+#temp = df[df.postcode > df.postcode.mean()][["name", "postcode"]]
+#temp = df[df.postcode > df.postcode.mean()]
+#print(temp)
+
+#temp = df.company.isnull()
+#for el in temp:
+#    if el == True:
+#        print(el)
+
+#temp = df[df.company.isnull()]
+#temp = df[df.company.isnull()][["name"]] 
+#print(temp)
+
+#비트연산-nor
+ #temp = df[(df.color == "Beige")]
+#temp = df[~(df.color == "Beige")]
+#print(temp.count())
+#print(temp.color.count()) 
+
+#and
+""" temp = df[(df.color == "LimeGreen") & (df.postcode > 70000)]
+print(temp) """
+#or
+""" temp = df[(df.color == "LimeGreen") | (df.postcode > 70000)]
+print(temp)
+ """
+#정렬
+""" temp = df.sort_values("postcode")
+#temp = df.sort_values("name", ascending=False)
+print(temp) """
+
+#데이터 재배열
+""" import pandas as pd
+
+col = ['Machine','Country','Price','Brand']
+data = [['TV','Korea',1000,'A'],
+        ['TV','Japan',1300,'B'],
+        ['TV','China',300,'C'],
+        ['PC','Korea',2000,'A'],
+        ['PC','Japan',3000,'E'],
+        ['PC','China',450,'F']]
+df = pd.DataFrame(data=data, columns=col)
+print(df)
+
+print("\n========================\n")
+print(df.pivot(index='Machine',columns='Country',values='Price'))
+#print(df.pivot(index='Brand',columns='Machine',values='Price'))
+#print(df.pivot(index='Country',columns='Machine',values='Price'))
+#print(df.pivot(index='price',columns='Brand',values='Machine')) """
+
 
