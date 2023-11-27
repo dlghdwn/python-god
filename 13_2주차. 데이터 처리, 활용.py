@@ -149,12 +149,11 @@ print("\n=======================\n") """
 
 #--부동산 정보 처리--
 #변환
-import pandas as pd
-target = "./asdf/apt.csv"
-df = pd.read_csv(target, encoding="CP949")
-df.to_csv("./asdf/conv_apt.csv", encoding="utf8")
+""" import pandas as pd
+target = "./data/apt.csv"
+df = pd.read_csv(target, encoding='CP949')
+df.to_csv("./data/conv_apt.csv", encoding='utf8') """
 
-print(df.head())
 
 #컬럼명
 """ import pandas as pd
@@ -182,4 +181,5 @@ print(len(arr)) """
 #축변환
 #print(df.transpose())
 #print(df.T.head()) 
+
 
